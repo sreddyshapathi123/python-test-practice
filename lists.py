@@ -10,7 +10,7 @@ print(wishlist[1])
 wishlist =["banana","orange","mango"]
 print(len(wishlist))
 
-#string int boolean data types#
+#string, int, boolean data types#
 
 list1 = ["banana","orange","mango"]
 list2 = [1,2,3,4,5]
@@ -25,3 +25,70 @@ print(list1)
 
 wishlist =["banana","orange","mango"]
 print(type(wishlist))
+
+#it ll written  reverse item##
+
+mylist =["banana","orange","mango"]
+print(mylist[-1])
+
+#it will written from 2nd ration to 5th ratio#
+mylist= ["banana","orange","mango","fruits","apple","kiwi"]
+print(mylist[2:5])
+
+
+##This example returns the items from "orange" (-4) to, but NOT including "mango" (-1):###
+
+thislist = ["apple", "banana", "cherry", "orange", "kiwi", "melon", "mango"]
+print(thislist[-4:-1])
+
+#if fruit is present##
+fruits = ["banana","orange","manngo"]
+if "orange" in fruits:
+    print("yes, 'orange is the fruits list")
+
+    #replacing the fruit in list #
+fruits = ["banana","orange","manngo"]
+fruits[1]="apple"
+print(fruits)
+
+# replace banana and cherry with  this list values#
+thislist = ["apple", "banana", "cherry", "orange", "kiwi", "mango"]
+thislist[1:3] = ["blackcurrant", "watermelon"]
+print(thislist)
+
+
+#change the value of second value with two new values##
+thislist = ["apple", "banana", "cherry"]
+thislist[1:2] = ["blackcurrant", "watermelon"]
+print(thislist)
+
+#change the first   value with 3 values#
+
+mylist = ["appple","banana"]
+mylist[1]="sudhakar","ssr"
+print(mylist)
+
+#if we want to add the item in existing list we ll use append()function#
+
+mylist =["banana","orange"]
+mylist.append("mango")
+print(mylist)
+
+#if we add an item at specified index location ll use insert()method##
+##here 0=banana;1=orange:2=apple## we need to print the mango value at 1 location #we are not replacing the value just we are adding the item##
+mylist =["banana","orange","apple"]
+mylist.insert(1,"mango")
+print(mylist)
+
+#here we can add the items to existing list from othe rlist items using "extend()"function#
+
+mylist =["mango","orange","apple"]
+otherlist =["cherry","watermelon","guva"]
+mylist.extend(otherlist)
+print(mylist)
+
+#add items after end using extend woith tuple items##
+mylist =["mango","orange","apple"]
+otherlist=("cherry","guva")#tuple items called#
+mylist.extend(otherlist)
+print(mylist)

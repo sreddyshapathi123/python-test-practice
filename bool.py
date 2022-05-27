@@ -23,7 +23,7 @@ def myFunction() :
 print(myFunction())
 
 
-##
+#here my function return true then print YES or IST NOT RETURN TRUE tHEN NO#
 def myFunction() :
     return True
 
