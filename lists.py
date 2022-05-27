@@ -26,12 +26,12 @@ print(list1)
 wishlist =["banana","orange","mango"]
 print(type(wishlist))
 
-#it ll written  reverse item##
+#it ll write  reverse item##
 
 mylist =["banana","orange","mango"]
 print(mylist[-1])
 
-#it will written from 2nd ration to 5th ratio#
+#it will write from 2nd ration to 5th ratio#
 mylist= ["banana","orange","mango","fruits","apple","kiwi"]
 print(mylist[2:5])
 
@@ -92,3 +92,23 @@ mylist =["mango","orange","apple"]
 otherlist=("cherry","guva")#tuple items called#
 mylist.extend(otherlist)
 print(mylist)
+
+
+## Remove list items ##
+#remove item using remove() function##
+mylist =  ["mango","orange","banana"]
+mylist.remove("mango")
+print(mylist)
+
+#remove specified index(item) with po()function##
+thislist = ["apple", "banana", "cherry"]
+thislist.pop(1)
+print(thislist)
+
+#delete entire files #
+
+thislist = ["apple", "banana", "cherry"]
+del thislist
+
+
+
