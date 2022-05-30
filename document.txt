@@ -10,3 +10,708 @@ pop()	Removes the element at the specified position
 remove()	Removes the item with the specified value
 reverse()	Reverses the order of the list
 sort()	Sorts the list
+
+
+PYTHON
+
+What is Python?
+Python is a popular programming language. It was created by Guido van Rossum, and released in 1991.
+It is used for:
+    • web development (server-side), 
+    • software development, 
+    • mathematics, 
+    • system scripting. 
+What can Python do?
+    • Python can be used on a server to create web applications. 
+    • Python can be used alongside software to create workflows. 
+    • Python can connect to database systems. It can also read and modify files. 
+    • Python can be used to handle big data and perform complex mathematics. 
+    • Python can be used for rapid prototyping, or for production-ready software development. 
+Why Python?
+    • Python works on different platforms (Windows, Mac, Linux, Raspberry Pi, etc). 
+    • Python has a simple syntax similar to the English language. 
+    • Python has syntax that allows developers to write programs with fewer lines than some other programming languages. 
+    • Python runs on an interpreter system, meaning that code can be executed as soon as it is written. This means that prototyping can be very quick. 
+    • Python can be treated in a procedural way, an object-oriented way or a functional way. 
+Good to know
+    • The most recent major version of Python is Python 3, which we shall be using in this tutorial. However, Python 2, although not being updated with anything other than security updates, is still quite popular. 
+    • In this tutorial Python will be written in a text editor. It is possible to write Python in an Integrated Development Environment, such as Thonny, Pycharm, Netbeans or Eclipse which are particularly useful when managing larger collections of Python files. 
+Python Syntax compared to other programming languages
+    • Python was designed for readability, and has some similarities to the English language with influence from mathematics. 
+    • Python uses new lines to complete a command, as opposed to other programming languages which often use semicolons or parentheses. 
+    • Python relies on indentation, using whitespace, to define scope; such as the scope of loops, functions and classes. Other programming languages often use curly-brackets for this purpose. 
+
+- install python and create folder and create one helloworld.py file  and run with python 3 will get out put here.
+
+
+helloworld.py
+print("Hello, World!")
+
+- Get into python command line
+“python3.9”
+write code print(“hello world”)
+o/p=hello world
+-want to exit command line 
+exit()
+
+Python Indentation
+Indentation refers to the spaces at the beginning of a code line.
+Where in other programming languages the indentation in code is for readability only, the indentation in Python is very important.
+Python uses indentation to indicate a block of code.
+Example
+if 5 > 2:
+  print("Five is greater than two!")
+Python will give you an error if you skip the indentation:
+Example
+Syntax Error:
+if 5 > 2:
+print("Five is greater than two!")
+
+The number of spaces is up to you as a programmer, the most common use is four, but it has to be at least one.
+Example
+if 5 > 2:
+ print("Five is greater than two!")  
+if 5 > 2:
+        print("Five is greater than two!") 
+
+
+usinng variables  calling variables   #use variables#
+x= 5
+y= "hello world"
+print (x)
+print(y)
+
+
+If you want to specify the data type of a variable, this can be done with casting.
+Example
+x = str(3)    # x will be '3'
+y = int(3)    # y will be 3
+z = float(3)  # z will be 3.0 
+print (x)
+print(y)
+print(z)
+
+-if we find data type by using values.
+
+Get the Type
+You can get the data type of a variable with the type() function.
+Example
+x = 5
+y = "John"
+print(type(x))
+print(type(y)) 
+
+
+
+
+
+-string Varibles can use double or single quotes....
+
+x = "John"
+print(x)
+#double quotes are the same as single quotes:
+x = 'John'
+print(x)
+
+Case-Sensitive
+Variable names are case-sensitive.
+Example
+This will create two variables:
+a = 4
+A = "Sally"
+Print(a)
+Print(A)
+#A will not overwrite a 
+
+Variable Names
+A variable can have a short name (like x and y) or a more descriptive name (age, carname, total_volume). Rules for Python variables: 
+    • A variable name must start with a letter or the underscore character 
+    • A variable name cannot start with a number 
+    • A variable name can only contain alpha-numeric characters and underscores (A-z, 0-9, and _ ) 
+    • Variable names are case-sensitive (age, Age and AGE are three different variables) 
+Example
+Legal variable names:
+myvar = "John"
+my_var = "John"
+_my_var = "John"
+myVar = "John"
+MYVAR = "John"
+myvar2 = "John" 
+Example
+Illegal variable names:
+2myvar = "John"
+my-var = "John"
+my var = "John" 
+
+Multi Words Variable Names
+Variable names with more than one word can be difficult to read.
+There are several techniques you can use to make them more readable:
+Camel Case
+Each word, except the first, starts with a capital letter:
+myVariableName = "John" 
+
+Pascal Case
+Each word starts with a capital letter:
+MyVariableName = "John" 
+
+Snake Case
+Each word is separated by an underscore character:
+my_variable_name = "John"
+
+Many Values to Multiple Variables
+Python allows you to assign values to multiple variables in one line:
+Example
+x, y, z = "Orange", "Banana", "Cherry"
+print(x)
+print(y)
+print(z) 
+Note: Make sure the number of variables matches the number of values, or else you will get an error.
+
+One Value to Multiple Variables
+And you can assign the same value to multiple variables in one line:
+Example
+x = y = z = "Orange"
+print(x)
+print(y)
+print(z) 
+
+Unpack a Collection
+If you have a collection of values in a list, tuple etc. Python allows you to extract the values into variables. This is called unpacking.
+Example
+Unpack a list:
+fruits = ["apple", "banana", "cherry"]
+x, y, z = fruits
+print(x)
+print(y)
+print(z)
+
+Output Variables
+The Python print() function is often used to output variables.
+Example
+x = "Python is awesome"
+print(x) 
+In the print() function, you output multiple variables, separated by a comma:
+Example
+x = "Python"
+y = "is"
+z = "awesome"
+print(x, y, z) 
+You can also use the + operator to output multiple variables:
+Example
+x = "Python "
+y = "is "
+z = "awesome"
+print(x + y + z) 
+Notice the space character after "Python " and "is ", without them the result would be "Pythonisawesome".
+For numbers, the + character works as a mathematical operator:
+Example
+x = 5
+y = 10
+print(x + y) 
+In the print() function, when you try to combine a string and a number with the + operator, Python will give you an error:
+Example
+x = 5
+y = "John"
+print(x + y)
+
+#if the  variable value mentioned in out side and inside of the function the inside varible call the inside value and outside variobale call the out side value or global value##
+
+x= "hi ssr"
+def myfunc():
+    x= "hi this is sudhahkar reddys hapathi "
+    print("hey " +x)
+myfunc()
+print("hello " +x)
+
+o/p:
+hello ssr
+hhey hi this is sudhakar reddy hapathi
+
+
+Setting the Data Type
+In Python, the data type is set when you assign a value to a variable:
+
+Example
+Data Type
+Try it
+x = "Hello World"
+str
+
+
+x = 20
+int
+
+x = 20.5
+float
+
+x = 1j
+complex
+
+x = ["apple", "banana", "cherry"]
+list
+
+x = ("apple", "banana", "cherry")
+tuple
+
+x = range(6)
+range
+
+x = {"name" : "John", "age" : 36}
+dict
+
+x = {"apple", "banana", "cherry"}
+set
+
+x = frozenset({"apple", "banana", "cherry"})
+frozenset
+
+x = True
+bool
+
+x = b"Hello"
+bytes
+
+x = bytearray(5)
+bytearray
+
+x = memoryview(bytes(5))
+memoryview
+
+x = None
+NoneType
+
+
+
+Setting the Specific Data Type
+If you want to specify the data type, you can use the following constructor functions:
+
+Example
+Data Type
+Try it
+x = str("Hello World")
+str
+
+
+x = int(20)
+int
+
+x = float(20.5)
+float
+
+x = complex(1j)
+complex
+
+x = list(("apple", "banana", "cherry"))
+list
+
+x = tuple(("apple", "banana", "cherry"))
+tuple
+
+x = range(6)
+range
+
+x = dict(name="John", age=36)
+dict
+
+x = set(("apple", "banana", "cherry"))
+set
+
+x = frozenset(("apple", "banana", "cherry"))
+frozenset
+
+x = bool(5)
+bool
+
+x = bytes(5)
+bytes
+
+x = bytearray(5)
+bytearray
+
+x = memoryview(bytes(5))
+memoryview
+
+
+-By using variables finding Data TYPES POF VALUES
+
+x= "hello world"
+y= 5
+z= 5.9
+a= 1j
+print(type(x))
+print(type(y))
+print(type(z))
+print(type(a))
+
+O/P:
+str,int,float,compex
+
+Python Numbers
+There are three numeric types in Python:
+    • int 
+    • float 
+    • complex 
+Variables of numeric types are created when you assign a value to them:
+Example
+x = 1    # int
+y = 2.8  # float
+z = 1j   # complex
+To verify the type of any object in Python, use the type() function:
+Example
+print(type(x))
+print(type(y))
+print(type(z))
+
+Int
+Int, or integer, is a whole number, positive or negative, without decimals, of unlimited length.
+Example
+Integers:
+x = 1
+y = 35656222554887711
+z = -3255522
+
+print(type(x))
+print(type(y))
+print(type(z)) 
+
+Float
+Float, or "floating point number" is a number, positive or negative, containing one or more decimals.
+Example
+Floats:
+x = 1.10
+y = 1.0
+z = -35.59
+
+print(type(x))
+print(type(y))
+print(type(z)) 
+Float can also be scientific numbers with an "e" to indicate the power of 10.
+Example
+Floats:
+x = 35e3
+y = 12E4
+z = -87.7e100
+
+print(type(x))
+print(type(y))
+print(type(z)) 
+
+Specify a Variable Type
+There may be times when you want to specify a type on to a variable. This can be done with casting. Python is an object-orientated language, and as such it uses classes to define data types, including its primitive types.
+Casting in python is therefore done using constructor functions:
+    • int() - constructs an integer number from an integer literal, a float literal (by removing all decimals), or a string literal (providing the string represents a whole number) 
+    • float() - constructs a float number from an integer literal, a float literal or a string literal (providing the string represents a float or an integer) 
+    • str() - constructs a string from a wide variety of data types, including strings, integer literals and float literals 
+Example
+Integers:
+x = int(1)   # x will be 1
+y = int(2.8) # y will be 2
+z = int("3") # z will be 3
+Example
+Floats:
+x = float(1)     # x will be 1.0
+y = float(2.8)   # y will be 2.8
+z = float("3")   # z will be 3.0
+w = float("4.2") # w will be 4.2
+Example
+Strings:
+x = str("s1") # x will be 's1'
+y = str(2)    # y will be '2'
+z = str(3.0)  # z will be '3.0' 
+
+Strings
+Strings in python are surrounded by either single quotation marks, or double quotation marks.
+'hello' is the same as "hello".
+You can display a string literal with the print() function:
+Example
+print("Hello")
+print('Hello') 
+
+Assign String to a Variable
+Assigning a string to a variable is done with the variable name followed by an equal sign and the string:
+Example
+a = "Hello"
+print(a) 
+
+Multiline Strings
+You can assign a multiline string to a variable by using three quotes:
+Example
+You can use three double quotes:
+a = """Lorem ipsum dolor sit amet,
+consectetur adipiscing elit,
+sed do eiusmod tempor incididunt
+ut labore et dolore magna aliqua."""
+print(a) 
+Or three single quotes:
+Example
+a = '''Lorem ipsum dolor sit amet,
+consectetur adipiscing elit,
+sed do eiusmod tempor incididunt
+ut labore et dolore magna aliqua.'''
+print(a) 
+
+Slicing
+You can return a range of characters by using the slice syntax.
+Specify the start index and the end index, separated by a colon, to return a part of the string.
+Example
+Get the characters from position 2 to position 5 (not included):
+b = "Hello, World!"
+print(b[2:5])
+
+Slice From the Start
+By leaving out the start index, the range will start at the first character:
+Example
+Get the characters from the start to position 5 (not included):
+b = "Hello, World!"
+print(b[:5])
+
+Slice To the End
+By leaving out the end index, the range will go to the end:
+Example
+Get the characters from position 2, and all the way to the end:
+b = "Hello, World!"
+print(b[2:])
+
+Negative Indexing
+Use negative indexes to start the slice from the end of the string: 
+Example
+Get the characters:
+From: "o" in "World!" (position -5)
+To, but not included: "d" in "World!" (position -2):
+b = "Hello, World!"
+print(b[-5:-2])
+
+example:
+#Negative indexing#
+##here we need postion form (-5) menas we will look form reverse at postion of 2 nd word##
+
+x="hello world!"
+#here 2nd postion menas (world!) and from -5 means  form start (!) to end word.
+#but not include (o) #
+print(x[-5:-2])
+op:orl
+
+
+Python - Modify Strings
+
+Python has a set of built-in methods that you can use on strings.
+
+Upper Case
+Example
+The upper() method returns the string in upper case:
+a = "Hello, World!"
+print(a.upper()) 
+Lower Case
+Example
+The lower() method returns the string in lower case:
+a = "Hello, World!"
+print(a.lower()) 
+Remove Whitespace
+Whitespace is the space before and/or after the actual text, and very often you want to remove this space.
+Example
+The strip() method removes any whitespace from the beginning or the end:
+a = " Hello, World! "
+print(a.strip()) # returns "Hello, World!" 
+Replace String
+Example
+The replace() method replaces a string with another string:
+a = "Hello, World!"
+print(a.replace("H", "J")) 
+Split String
+The split() method returns a list where the text between the specified separator becomes the list items.
+Example
+The split() method splits the string into substrings if it finds instances of the separator:
+a = "Hello, World!"
+print(a.split(",")) # returns ['Hello', ' World!'] 
+
+String Concatenation
+To concatenate, or combine, two strings you can use the + operator.
+Example
+Merge variable a with variable b into variable c:
+a = "Hello"
+b = "World"
+c = a + b
+print(c) 
+Example
+To add a space between them, add a " ":
+a = "Hello"
+b = "World"
+c = a + " " + b
+print(c)
+
+
+Python - Format - Strings
+
+String Format
+As we learned in the Python Variables chapter, we cannot combine strings and numbers like this:
+Example
+age = 36
+txt = "My name is John, I am " + age
+print(txt) 
+But we can combine strings and numbers by using the format() method!
+The format() method takes the passed arguments, formats them, and places them in the string where the placeholders {} are:
+Example
+Use the format() method to insert numbers into strings:
+age = 36
+txt = "My name is John, and I am {}"
+print(txt.format(age)) 
+The format() method takes unlimited number of arguments, and are placed into the respective placeholders:
+Example
+quantity = 3
+itemno = 567
+price = 49.95
+myorder = "I want {} pieces of item {} for {} dollars."
+print(myorder.format(quantity, itemno, price)) 
+You can use index numbers {0} to be sure the arguments are placed in the correct placeholders:
+Example
+quantity = 3
+itemno = 567
+price = 49.95
+myorder = "I want to pay {2} dollars for {0} pieces of item {1}."
+print(myorder.format(quantity, itemno, price))
+
+String Methods
+Python has a set of built-in methods that you can use on strings.
+Note: All string methods returns new values. They do not change the original string.
+Method
+Description
+capitalize()
+Converts the first character to upper case
+casefold()
+Converts string into lower case
+center()
+Returns a centered string
+count()
+Returns the number of times a specified value occurs in a string
+encode()
+Returns an encoded version of the string
+endswith()
+Returns true if the string ends with the specified value
+expandtabs()
+Sets the tab size of the string
+find()
+Searches the string for a specified value and returns the position of where it was found
+format()
+Formats specified values in a string
+format_map()
+Formats specified values in a string
+index()
+Searches the string for a specified value and returns the position of where it was found
+isalnum()
+Returns True if all characters in the string are alphanumeric
+isalpha()
+Returns True if all characters in the string are in the alphabet
+isdecimal()
+Returns True if all characters in the string are decimals
+isdigit()
+Returns True if all characters in the string are digits
+isidentifier()
+Returns True if the string is an identifier
+islower()
+Returns True if all characters in the string are lower case
+isnumeric()
+Returns True if all characters in the string are numeric
+isprintable()
+Returns True if all characters in the string are printable
+isspace()
+Returns True if all characters in the string are whitespaces
+istitle()
+Returns True if the string follows the rules of a title
+isupper()
+Returns True if all characters in the string are upper case
+join()
+Joins the elements of an iterable to the end of the string
+ljust()
+Returns a left justified version of the string
+lower()
+Converts a string into lower case
+lstrip()
+Returns a left trim version of the string
+maketrans()
+Returns a translation table to be used in translations
+partition()
+Returns a tuple where the string is parted into three parts
+replace()
+Returns a string where a specified value is replaced with a specified value
+rfind()
+Searches the string for a specified value and returns the last position of where it was found
+rindex()
+Searches the string for a specified value and returns the last position of where it was found
+rjust()
+Returns a right justified version of the string
+rpartition()
+Returns a tuple where the string is parted into three parts
+rsplit()
+Splits the string at the specified separator, and returns a list
+rstrip()
+Returns a right trim version of the string
+split()
+Splits the string at the specified separator, and returns a list
+splitlines()
+Splits the string at line breaks and returns a list
+startswith()
+Returns true if the string starts with the specified value
+strip()
+Returns a trimmed version of the string
+swapcase()
+Swaps cases, lower case becomes upper case and vice versa
+title()
+Converts the first character of each word to upper case
+translate()
+Returns a translated string
+upper()
+Converts a string into upper case
+zfill()
+Fills the string with a specified number of 0 values at the beginning
+
+Strings are Arrays
+Like many other popular programming languages, strings in Python are arrays of bytes representing unicode characters.
+However, Python does not have a character data type, a single character is simply a string with a length of 1.
+Square brackets can be used to access elements of the string.
+Example
+Get the character at position 1 (remember that the first character has the position 0):
+a = "Hello, World!"
+print(a[1]) 
+
+Looping Through a String
+Since strings are arrays, we can loop through the characters in a string, with a for loop.
+Example
+Loop through the letters in the word "banana":
+for x in "banana":
+  print(x) 
+Learn more about For Loops in our Python For Loops chapter.
+
+String Length
+To get the length of a string, use the len() function.
+Example
+The len() function returns the length of a string:
+a = "Hello, World!"
+print(len(a)) 
+
+Check String
+To check if a certain phrase or character is present in a string, we can use the keyword in.
+Example
+Check if "free" is present in the following text:
+txt = "The best things in life are free!"
+print("free" in txt)
+Use it in an if statement:
+Example
+Print only if "free" is present:
+txt = "The best things in life are free!"
+if "free" in txt:
+  print("Yes, 'free' is present.") 
+Learn more about If statements in our Python If...Else chapter.
+
+Check if NOT
+To check if a certain phrase or character is NOT present in a string, we can use the keyword not in.
+Example
+Check if "expensive" is NOT present in the following text:
+txt = "The best things in life are free!"
+print("expensive" not in txt) 
+Use it in an if statement:
+Example
+print only if "expensive" is NOT present:
+txt = "The best things in life are free!"
+if "expensive" not in txt:
+  print("No, 'expensive' is NOT present.")
+
