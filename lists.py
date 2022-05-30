@@ -105,10 +105,32 @@ thislist = ["apple", "banana", "cherry"]
 thislist.pop(1)
 print(thislist)
 
-#delete entire files #
+#delete entire files usinng entire files #
 
 thislist = ["apple", "banana", "cherry"]
 del thislist
 
+#using clear() fnction clear all data##
+thislist =["apple","banana","orange"]
+thislist.clear()
+print(thislist)
+
+#using for loop we can print all items one by one#
+mylist = ["apple","banana","orange"]
+for x in mylist:
+    print(x)
+
+#print all items using their index numbers##
+mylist = ["apple","bannaa","mango"]
+for i in range(len(mylist)):
+    print(mylist[i])
+
+#using while loop ,print items#
+
+mylist = ["apple","bannaa","mango"]
+i=0
+while i <len(mylist):
+    print(mylist[i])
+    i=i+1
 
 
