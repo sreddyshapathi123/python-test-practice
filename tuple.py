@@ -111,4 +111,79 @@ y.remove("orange")#removing item#
 mytuple =tuple(y)#converting  to tuple#
 print(mytuple)
 
+##UNPACK TUPLES##
 
+fruits = ("apple", "banana", "cherry")
+
+(green, yellow, red) = fruits #here assigning values#
+
+print(green)# green=apple,yellow=banana,red=cherry#
+print(yellow)
+print(red)#op-apple,banana,cherry
+
+
+
+#asterisk using#here we ll provide must nfd should no of variables equal to no of values if variables less than values then we will use "*" (asterisk)##
+
+fruits = ("apple", "banana", "cherry", "strawberry", "raspberry")
+
+(green, yellow, *red) = fruits
+
+print(green) #green=apple
+print(yellow)#yellow=banana
+print(red)#remaining fruits should be considered  values for red variable##
+
+
+#here python assigned values  based on variables here green=apple  red= cherry and remaining 3 valued assigned to "tropic"variable # here asterisk added to the tropic variable##
+
+fruits = ("apple", "mango", "papaya", "pineapple", "cherry")
+
+(green, *tropic, red) = fruits
+
+print(green)
+print(tropic)
+print(red)
+
+##LOOP TUPLE##
+#here we can loop through the tuple items using for loop##
+mytuple =("apple","orange","mango")
+for x in mytuple:
+    print(x)
+
+
+#using len() range() function we can find index numbers##
+mytuple =("guva","sweet","sugar")
+for x in range(len(mytuple)):
+   print(mytuple[x])
+
+##using while loop#Print all items, using a while loop to go through all the index numbers:##
+mytuple =("coc","pepsi","thumsup")
+i=0
+while i <len(mytuple):
+    print(mytuple[i])#print i value
+    i= i+1 #here incresing index numbers and print as per values#
+
+
+##JOIN TUPLES##
+
+#by using + operator we can add 2 or more tuples.###
+
+tuple1 =("a","b","c")
+tuple2 = (1,2,3,4)
+tuple3 = tuple1+tuple2
+print(tuple3)
+
+#using *(multiplication)operator#
+
+fruits = ("apple", "banana", "cherry")
+mytuple = fruits * 2
+
+print(mytuple)
+
+
+#Tuple Methods:::::
+
+#Python has two built-in methods that you can use on tuples.
+
+#1)count()	Returns the number of times a specified value occurs in a tuple
+#2)index()	Searches the tuple for a specified value and returns the position of where it was found...##
