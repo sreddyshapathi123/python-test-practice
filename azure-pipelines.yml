@@ -11,14 +11,11 @@ pool:
 strategy:
   matrix:
 
-    python38:
-      python.version: '3.8'
-
 steps:
 - task: UsePythonVersion@0
   inputs:
-    versionSpec: '$(python.version)'
-  displayName: 'Use Python $(python.version)'
+    versionSpec: '3.8'
+  
 
 - script: |
     python -m pip install --upgrade pip
@@ -28,4 +25,13 @@ steps:
 - script: |
     pip install pytest pytest-azurepipelines
     pytest
+  displayName: 'pytest'
+- script: |
+    python -m pip install flake8
+    flake8 .
+  displayName: 'Run lint tests'
+- script: |
+    pip install pytest pytest-azurepipelines
+    pip install pytest-cov
+    pytest --doctest-modules --junitxml=junit/test-results.xml --cov=. --cov-report=xml
   displayName: 'pytest'
