@@ -58,5 +58,89 @@ myset.update(newset)
 print(myset)
 
 #WE CAN USE ITERABLE (TUPLE,list,dictionaries)these are add to set  by using update() method##
+myset = {"apple","banana","cherry"}
+newset = ["melon","mango","kiwi"]#these all are list items##
+myset.update(newset)
+print(myset)
+
+#remove the set item using remove() or discard() method##
+myset = {"apple","banana","cherry"}
+myset.remove("apple")
+print(myset)
+  ##or discard() method##
+myset = {"apple","banana","cherry"}
+myset.discard("banana")
+print(myset)
 
 
+#here we can remopve set items by using pop() method also but pop method is remove ##
+myset = {"apple", "banana", "cherry"}
+
+x = myset.pop()#using method##
+
+print(x)##removinng item#
+
+print(myset)#after removing item print##
+#above actually popu function which item remove we dont know because of items or inordered so,###
+
+
+#using clear() method clear the items##
+myset = {"apple","banana","cherry"}
+myset.clear()
+print(myset)
+
+#"delete"  keyword  using delete the set items#
+#myset = {"apple","banana","cherry"}
+#del myset
+#print(myset)#actually here will get error beacuse here given delete command after deleting cant print the myset items##
+
+##You can loop through the set items by using a for loop##:
+myset = {"apple","banana","cherry"}
+for x in myset:
+    print(x)
+
+##JOIN SETS##
+#there are many ways to join two or more set items in python we can use uninon() and update() methods for joining the set items##
+
+myset = {"apple","banana","cherry"}
+myset2 ={1,2,3,4}
+myset3 =myset.union(myset2)
+print(myset3)
+
+#using update() method join two set items##
+myset = {"a","b","c"}
+myset2 ={1,2,3,4}
+myset.update(myset2)
+print(myset)
+
+#we can print only deplicates on the both items by using intersection_update() method#
+x= {"apple","banana","kiwi"}
+y= {"apple","melon","guva","kiwi"}
+x.intersection_update(y)
+print(x)
+
+
+##The intersection() method will return a new set, that only contains the items that are present in both sets.##
+x = {"apple", "banana", "cherry"}
+y = {"google", "microsoft", "apple"}
+
+z = x.intersection(y)
+
+print(z)
+
+##The symmetric_difference_update() method will keep only the elements that are NOT present in both sets.
+
+x = {"apple", "banana", "cherry"}
+y = {"google", "microsoft", "apple"}
+
+x.symmetric_difference_update(y)
+
+print(x)
+
+##The symmetric_difference() method will return a new set, that contains only the elements that are NOT present in both sets.##
+x = {"apple", "banana", "cherry"}
+y = {"google", "microsoft", "apple"}
+
+z = x.symmetric_difference(y)
+
+print(z)
