@@ -1,5 +1,5 @@
-#SETS##
-#sets are used to store multiple itemsi in single varibale##
+#PYTHON-SETS##
+#sets are used to store multiple items in single variable##
 
 myset = {"apple","banana","apple"}#here sets are not allowed duplicate values
 print(myset)#op-apple,banana##
@@ -10,26 +10,28 @@ print(myset)#op-apple,banana##
 #using len() function find no index in sets##
 
 myset = {"apple","banana","cherry"}
-print(len(myset))
+print(len(myset))#op-3
 
 
 #a set can be different data types@string,int,boolean##
 set1 = {"apple", "banana", "cherry"}
 set2 = {1, 5, 7, 9, 3}
 set3 = {True, False, False}
-
+print(set1)
+print(set2)
+print(set3)
 
 ##A set with strings, integers and boolean values:##
 set1 = {"abc", 34, True, 40, "male"} 
 print(set1)
 
 
-#data type of set##python defined its class set data type##
+#data type of set##python defined its" class set" data type##
 myset = {"apple","banana","cherry"}
-print(type(myset))
+print(type(myset))##op-<class set>
 
 #by using set() constructor make it as set #using double brackets##
-myset = (("apple","banana","cherry"))
+myset = (("apple","banana","cherry"))##it is  not a set but using these constructur make a set##
 print(myset)
 
 #access items##
@@ -81,7 +83,7 @@ x = myset.pop()#using method##
 print(x)##removinng item#
 
 print(myset)#after removing item print##
-#above actually popu function which item remove we dont know because of items or inordered so,###
+#above actually pop() method  which item remove we dont know because of items or inordered so,###
 
 
 #using clear() method clear the items##
@@ -92,7 +94,7 @@ print(myset)
 #"delete"  keyword  using delete the set items#
 #myset = {"apple","banana","cherry"}
 #del myset
-#print(myset)#actually here will get error beacuse here given delete command after deleting cant print the myset items##
+#print(myset)#actually here will get error, ,beacuse here given delete command, after deleting cant print the myset items##
 
 ##You can loop through the set items by using a for loop##:
 myset = {"apple","banana","cherry"}
