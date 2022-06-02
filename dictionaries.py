@@ -234,9 +234,137 @@ details =  {
         "brand" : "apple",
         "location" : "USA"
 }
- details.clear["location"]
+details.clear()
 print(details)
 
+##loop dictionaries#
+#we can loop through a dictionary by using "for" loop.##
+#by using this wwe can return keys of dictionary as wella s values also we hava another method for values##
+details = {
+        "name" : "sudhakar",
+        "age" : 26,
+        "place" : "hydrabad"
+}
+for x in details:
+    print(x)
+
+#print all values##
+details = {
+        "name" : "sudhakar",
+        "age" : 26,
+        "place" : "hydrabad"
+}
+for x in details:
+    print(details[x])
+
+##BY USING key() method we can return a keys on dictionary#
+details = {
+        "name" : "sudhakar",
+        "age" : 26,
+        "place" : "hydrabad"
+}
+for x in details.keys():
+    print(x)
+
+##using values we can return values of dictionary items##
+
+thisdict =	{
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+
+for x in thisdict.values():
+    print(x)
+
+#using item() method  we can loop booth keys and values  print#
+thisdict =      {
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+for x,y in thisdict.items():
+  print(x,y)
+
+
+##Copy Dictionaries##
+#by using copy() method we can copy the dictionary  items##
+details = {
+        "name" : "sudhakar",
+        "age" : 26,
+        "place" : "hydrabad"
+}
+newdetails =details.copy()
+print(newdetails)
+
+#another way copy dictionary  with dict() function:##
+details = {
+        "name" : "Jhon",
+        "age" : 55,
+        "place" : "USA"
+}
+newdetails = dict(details)
+print(newdetails)
+
+#Nested dictionaries##
+#create dictionary that containe 3 or more dictionaries called nested dictionary#
+myfamily = {
+        "father" : {
+            "name" : "john",
+            "age" : 55
+    },
+        "mother" : {
+            "name" : "meri",
+            "age" : 48
+    },
+        "Brother" : {
+            "name" : "bolward",
+            "age" : 24
+    }
+}
+print(myfamily)
+
+
+#create dictionaries and create one dictionary containes other dictionaries##
+
+child1 =   {
+        "name" : "abc",
+        "age" : 12
+}
+
+child2 = {
+        "name" : "def",
+        "age" : 11
+}
+
+child3 = {
+        "name" : "ghi",
+        "age" : 14
+}
+
+family = {
+        "child1" : child1,
+        "child2" : child2,
+        "child3" :child3
+}
+print(family)
 
 
 
+
+
+##====>>>>Dictionary Methods#we are used these all methods###:::<<<<====
+
+###Python has a set of built-in methods that you can use on dictionaries.
+
+#clear()	Removes all the elements from the dictionary
+#copy()	Returns a copy of the dictionary
+#fromkeys()	Returns a dictionary with the specified keys and value
+#get()	Returns the value of the specified key
+#items()	Returns a list containing a tuple for each key value pair
+#keys()	Returns a list containing the dictionary's keys
+p#op()	Removes the element with the specified key
+#popitem()	Removes the last inserted key-value pair
+#setdefault()	Returns the value of the specified key. If the key does not exist: insert the key, with the specified value
+#update()	Updates the dictionary with the specified key-value pairs
+#values()	Returns a list of all the values in the dictionary
