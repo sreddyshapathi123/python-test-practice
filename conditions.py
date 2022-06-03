@@ -86,3 +86,40 @@ b = 300
 
 if b > a:
   pass
+
+
+#python while loops##
+#by using while loop we can excute set of statements if condition is true##
+
+i=1#variable 1#
+while i<8:
+    print(i)
+    i+=1
+
+
+#by using break statement we can stop the loop ,if even condition true##
+i=1
+while i<8:#condition is true(i less than 8)
+    print(i)
+    if i==3:#i value equal to 3#
+        break
+    i+=1
+
+
+#using continue statemnet we can stop current iteration and contuinue with next##
+i=0
+while i<8:
+    i+=1#here loop upto 2 variable#
+    if i==3:#if equal 3 then stop at 2 variable#
+        continue#using this statement the loop jump to next variable#
+    #start with 4 variable#
+    print(i)
+
+
+##using else statement#print the  message once condition is false ##
+i=1
+while i<6:
+ print(i)
+ i+=1#upto 5 number printed#
+else:
+  print("i value is less than 6")
