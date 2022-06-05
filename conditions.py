@@ -123,3 +123,97 @@ while i<6:
  i+=1#upto 5 number printed#
 else:
   print("i value is less than 6")
+
+#For loops##
+#a for loop is used to iteration over a sequence (that is  list ,tuple,dict,set,str)
+#by uising for loop we cna execute set of statements ,once for each item in list,tuple or str,dict etc#
+
+fruits = ("apple","mango","banana")
+for x in fruits:
+    print(x)
+
+#looping through a string#
+
+for x in "banana":
+    print(x)#here will get op-banana words one by one##
+
+#uinsg break statement we can stop the loop#(and before stopping the loop print all items)##
+fruits = ["apple","banana","mango","kiwi"]
+for x in fruits:
+    print(x)
+    if x== "mango":
+      break#her will get op-upto mango item#
+
+
+
+##exit the loop when x in mango ,here break comes before the print##
+
+fruits = ["apple","banana","mango","kiwi"]
+for x in fruits:
+  if x == "mango":
+      break 
+  print(x)##herw will get op-upto banana only##
+
+
+
+##usingg continue statement we can continue with next item##
+
+fruits = ["apple","banana","mango","kiwi"]
+for x in fruits:
+  if x == "mango":
+      continue
+  print(x)##here op-apple,banana,kiwi#
+
+
+
+
+#using range() function we can excecute the code no fo time by mention the no of times  with range function##
+
+for x in range(6):
+    print(x)
+
+
+
+#using parameters wwe can print the values from  what we can provide  the number for ex(2,6) here print the values form 2 to 6(not include 6 number only upto 5)
+
+for x in range(2,6):
+    print(x)
+
+
+
+
+#using third parameter we add the sequence in the number s here(2,30,3) here third parameter menas form 2 to 30 incerement sequemce with 3# 5,8,11, etc...#
+
+for x in range(2,30,3):
+    print(x)
+
+
+
+#using else  keyword ,when the loop is completed ,then the else statement will printed#
+
+for x in range(6):
+    print(x)#here numbers print upto 5 #
+else:#here print the bel;ow statement after printing the numbers#
+    print("numbers loop completed")
+
+
+
+#the else statemnet will not executed if we stopped loop by using break statement##
+
+for x in range(8):
+ if x==5: 
+   break
+ print(x)#here print only upto 4 numbers#
+else:
+ print("else statemnnt will not executed")
+
+
+
+#netsted loops#means nested loop  is a loop inside a loop claaed #nested loops#
+
+adj = ["red", "big", "tasty"]#here print the each adjectibve for every fruit#
+fruits = ["apple", "banana", "guva"]
+
+for x in adj:
+  for y in fruits:
+    print(x, y)
