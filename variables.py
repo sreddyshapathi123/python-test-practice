@@ -56,6 +56,16 @@ A='sudha'
 print(a)
 print(A)
 
+#write variables and  finding some  item value#
+a=200
+b=300
+c=500
+bookcost=80
+totalamount=a+b+c
+print(totalamount)
+print(totalamount/bookcost)
+
+
 #we can use names as varaibales#
 #but the names start with only letter either small or capital or underscoore but not with number#
 #name contain with alphanumaric with underscore#
