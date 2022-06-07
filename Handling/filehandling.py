@@ -19,7 +19,7 @@
 
 #using with mode and open() function ##
 
-f= open("demofile.txt","at")#here a- appending menas creates file ,t mens text file#-op-demofile.txt
+f= open("demofile.txt","at")#here a- appending means creates file ,t means text file#-op-demofile.txt
 
 
 #using "r" mode#
