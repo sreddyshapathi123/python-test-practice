@@ -1,12 +1,12 @@
 ##file handling part very important in any web application#
-#python has many functins for reating deleteing reading updating files#
+#python has many functins for creating deleteing reading updating files#
 #the key function for working with files in python is open() function#
 #the open() function takes two parms: filename,and mode#
 #we have 4 methods in python(modes)#
 #r-a-w-x#
-#r-oepn a file for reading ,get error if file doent exist
+#r-open a file for reading ,get error if file doent exist
 #a-append-open a file for appending  ,creates the file if file doesnt exist#
-#w-write-open a file for writung create the file ,if doesnt exist#
+#w-write-open a file for writing create the file ,if doesnt exist#
 #x-create- create the sepcified file ,get error if file already exist#
 
 #t-textmode
@@ -23,7 +23,7 @@ f= open("demofile.txt","at")#here a- appending means creates file ,t means text 
 
 
 #using "r" mode#
-f=open("demofile.txt","r")
+f=open("demofile.txt","r")#r-means read the file#
 print(f.read())
 
 
@@ -33,7 +33,7 @@ print(f.read())
 
 
 
-#if we want read the 5 charecters from the deom file then##
+#if we want read the 5 charecters from the demofile then##
 f=open("demofile.txt","r")
 print(f.read(5))#get op-hello#
 
@@ -69,7 +69,7 @@ f.close()
 
 #by using "append"-a" mode we can add the data in the  file and save close and read the data from the file##
 f=open("demofile.txt","a")
-f.write("hi this is sudhakarreddys hapathi")   #here using append mode adding the content ion that file#
+f.write("hi this is sudhakarreddys hapathi")   #here using append mode adding the content to  that file#
 f.close()                                      #after saving the data closing the file#
 #now we will read the data from file#
 f=open("demofile.txt","r")                     #using r-read mode we can read the data from the file#
@@ -87,7 +87,7 @@ print(f.read())
 #To delete a file, you must import the OS module, and run its os.remove() function:##
 import os
 os.remove("demofile.txt")
-#if we run this total files then create  txt file and applied all and finally remove  that file#
+#if the file present then remove the file otherwise get error#
 
 
 #to avoid the error ,first we need to check the file exist or not if exist then will delete otherwise wwill get popup message##
