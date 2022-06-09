@@ -1,0 +1,7 @@
+#django is a python frame work ,that makes it easier to create  web sites using python#
+#in django we have pattern MVT#
+M-MODEL-what data u want to present from the database
+V-View-based on request from the user#
+T-template-a text file(htmlfile)what we display the data
+
+
