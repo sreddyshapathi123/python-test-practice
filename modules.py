@@ -19,4 +19,13 @@ person1 = {
 
 
 
+##using form keyword we can import the some parts from module##
 
+def greeting(name):
+    print("hello " + name)
+
+person1 = {
+    "name" : "sudhakarreddy",
+    "age" : 24,
+    "place" : "hydrabad"
+}                             #check modules2.py file##

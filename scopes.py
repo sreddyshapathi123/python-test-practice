@@ -1,9 +1,9 @@
 #SCOPES#
-#a variable is only available from inside the region called created this called as scope#
+#a variable is only available from inside the region  created, this called as scope#
 
 
 
-#cariable ccreated inside a function#
+#variable created inside a function#
 
 def myfunc():
     x=500
@@ -47,7 +47,7 @@ print(x)         #out side global variable prinnting#
 
 
 
-#if use global key word t,even that variable inside a fuction that variable as global variable##3
+#if use global key word,even that variable inside a fuction that variable as global variable##3
 
 def myfunc():
     global x
